@@ -74,7 +74,8 @@ class QuizControllerTest {
 
         // when
         final ResultActions result = mockMvc.perform(post(url).contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(new Code(1))));
+                .content(objectMapper.writeValueAsString(new Code(1)))
+        );
 
 
         // then
@@ -92,7 +93,8 @@ class QuizControllerTest {
 
         // when
         final ResultActions result = mockMvc.perform(post(url).contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(new Code(13))));
+                .content(objectMapper.writeValueAsString(new Code(13)))
+        );
 
         // then
         result
